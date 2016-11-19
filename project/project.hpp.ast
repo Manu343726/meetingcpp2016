@@ -1,0 +1,98 @@
+/home/manu343726/Documents/meetingcpp2016/project/project.hpp:0: (namespace, Type kind: TypeKind.INVALID) 
+  +--/home/manu343726/Documents/meetingcpp2016/project/project.hpp:4: (namespace, Type kind: TypeKind.INVALID) ::project
+     +--/home/manu343726/Documents/meetingcpp2016/project/project.hpp:38: (class, Type kind: TypeKind.RECORD) ::project::Dog
+     |  +--(function family) foo
+ - foo(const project::string &)
+     |  +--(function family) talk
+ - talk()
+     |  +--/home/manu343726/Documents/meetingcpp2016/project/project.hpp:47: (field, Type kind: TypeKind.UNEXPOSED) ::project::Dog::dogAlias
+     |  +--/home/manu343726/Documents/meetingcpp2016/project/project.hpp:9: (baseclass, Type kind: TypeKind.RECORD) ::project::Dog::Animal
+     |  |  +--(function family) talk
+ - talk()
+     |  |  +--/home/manu343726/Documents/meetingcpp2016/project/project.hpp:12: (enum, Type kind: TypeKind.ENUM) ::project::Dog::Animal::Species
+     |  |  +--/home/manu343726/Documents/meetingcpp2016/project/project.hpp:23: (field, Type kind: TypeKind.UNEXPOSED) ::project::Dog::Animal::name
+     |  |  +--/home/manu343726/Documents/meetingcpp2016/project/project.hpp:24: (field, Type kind: TypeKind.ENUM) ::project::Dog::Animal::species
+     |  |  +--/home/manu343726/Documents/meetingcpp2016/project/project.hpp:22: (method, Type kind: TypeKind.FUNCTIONPROTO) ::project::Dog::Animal::talk
+     |  +--/home/manu343726/Documents/meetingcpp2016/project/project.hpp:46: (method, Type kind: TypeKind.FUNCTIONPROTO) ::project::Dog::foo
+     |  +--/home/manu343726/Documents/meetingcpp2016/project/project.hpp:45: (method, Type kind: TypeKind.FUNCTIONPROTO) ::project::Dog::talk
+     +--/home/manu343726/Documents/meetingcpp2016/project/project.hpp:9: (class, Type kind: TypeKind.RECORD) ::project::Animal
+     |  +--(function family) talk
+ - talk()
+     |  +--/home/manu343726/Documents/meetingcpp2016/project/project.hpp:12: (enum, Type kind: TypeKind.ENUM) ::project::Animal::Species
+     |  +--/home/manu343726/Documents/meetingcpp2016/project/project.hpp:23: (field, Type kind: TypeKind.UNEXPOSED) ::project::Animal::name
+     |  +--/home/manu343726/Documents/meetingcpp2016/project/project.hpp:24: (field, Type kind: TypeKind.ENUM) ::project::Animal::species
+     |  +--/home/manu343726/Documents/meetingcpp2016/project/project.hpp:22: (method, Type kind: TypeKind.FUNCTIONPROTO) ::project::Animal::talk
+     +--/home/manu343726/Documents/meetingcpp2016/project/project.hpp:27: (class, Type kind: TypeKind.RECORD) ::project::Cat
+        +--(function family) talk
+ - talk()
+        +--/home/manu343726/Documents/meetingcpp2016/project/project.hpp:35: (field, Type kind: TypeKind.UNEXPOSED) ::project::Cat::catAlias
+        +--/home/manu343726/Documents/meetingcpp2016/project/project.hpp:9: (baseclass, Type kind: TypeKind.RECORD) ::project::Cat::Animal
+        |  +--(function family) talk
+ - talk()
+        |  +--/home/manu343726/Documents/meetingcpp2016/project/project.hpp:12: (enum, Type kind: TypeKind.ENUM) ::project::Cat::Animal::Species
+        |  +--/home/manu343726/Documents/meetingcpp2016/project/project.hpp:23: (field, Type kind: TypeKind.UNEXPOSED) ::project::Cat::Animal::name
+        |  +--/home/manu343726/Documents/meetingcpp2016/project/project.hpp:24: (field, Type kind: TypeKind.ENUM) ::project::Cat::Animal::species
+        |  +--/home/manu343726/Documents/meetingcpp2016/project/project.hpp:22: (method, Type kind: TypeKind.FUNCTIONPROTO) ::project::Cat::Animal::talk
+        +--/home/manu343726/Documents/meetingcpp2016/project/project.hpp:34: (method, Type kind: TypeKind.FUNCTIONPROTO) ::project::Cat::talk
+
+
+FULL AST BELLOW:
+
+
+File None, line 0: '/home/manu343726/Documents/meetingcpp2016/project/project.hpp', CursorKind.TRANSLATION_UNIT
+  +--File /home/manu343726/Documents/meetingcpp2016/project/project.hpp, line 4: 'project', CursorKind.NAMESPACE
+     +--File /home/manu343726/Documents/meetingcpp2016/project/project.hpp, line 7: 'string', CursorKind.TYPE_ALIAS_DECL
+     +--File /home/manu343726/Documents/meetingcpp2016/project/project.hpp, line 9: 'Animal', CursorKind.CLASS_DECL
+     |  +--File /home/manu343726/Documents/meetingcpp2016/project/project.hpp, line 11: '', CursorKind.CXX_ACCESS_SPEC_DECL
+     |  +--File /home/manu343726/Documents/meetingcpp2016/project/project.hpp, line 12: 'Species', CursorKind.ENUM_DECL
+     |  |  +--File /home/manu343726/Documents/meetingcpp2016/project/project.hpp, line 14: 'Cat', CursorKind.ENUM_CONSTANT_DECL
+     |  |  +--File /home/manu343726/Documents/meetingcpp2016/project/project.hpp, line 15: 'Dog', CursorKind.ENUM_CONSTANT_DECL
+     |  +--File /home/manu343726/Documents/meetingcpp2016/project/project.hpp, line 18: 'Animal(project::Animal::Species)', CursorKind.CONSTRUCTOR
+     |  |  +--File /home/manu343726/Documents/meetingcpp2016/project/project.hpp, line 18: 'species', CursorKind.PARM_DECL
+     |  |  |  +--File /home/manu343726/Documents/meetingcpp2016/project/project.hpp, line 18: 'enum project::Animal::Species', CursorKind.TYPE_REF
+     |  |  +--File /home/manu343726/Documents/meetingcpp2016/project/project.hpp, line 19: 'species', CursorKind.MEMBER_REF
+     |  |  +--File /home/manu343726/Documents/meetingcpp2016/project/project.hpp, line 19: 'species', CursorKind.UNEXPOSED_EXPR
+     |  |  |  +--File /home/manu343726/Documents/meetingcpp2016/project/project.hpp, line 19: 'species', CursorKind.DECL_REF_EXPR
+     |  |  +--File /home/manu343726/Documents/meetingcpp2016/project/project.hpp, line 20: '', CursorKind.COMPOUND_STMT
+     |  +--File /home/manu343726/Documents/meetingcpp2016/project/project.hpp, line 22: 'talk()', CursorKind.CXX_METHOD
+     |  +--File /home/manu343726/Documents/meetingcpp2016/project/project.hpp, line 23: 'name', CursorKind.FIELD_DECL
+     |  |  +--File /home/manu343726/Documents/meetingcpp2016/project/project.hpp, line 23: 'project', CursorKind.NAMESPACE_REF
+     |  |  +--File /home/manu343726/Documents/meetingcpp2016/project/project.hpp, line 23: 'string', CursorKind.TYPE_REF
+     |  +--File /home/manu343726/Documents/meetingcpp2016/project/project.hpp, line 24: 'species', CursorKind.FIELD_DECL
+     |     +--File /home/manu343726/Documents/meetingcpp2016/project/project.hpp, line 24: 'enum project::Animal::Species', CursorKind.TYPE_REF
+     +--File /home/manu343726/Documents/meetingcpp2016/project/project.hpp, line 27: 'Cat', CursorKind.CLASS_DECL
+     |  +--File /home/manu343726/Documents/meetingcpp2016/project/project.hpp, line 27: 'class project::Animal', CursorKind.CXX_BASE_SPECIFIER
+     |  |  +--File /home/manu343726/Documents/meetingcpp2016/project/project.hpp, line 27: 'class project::Animal', CursorKind.TYPE_REF
+     |  +--File /home/manu343726/Documents/meetingcpp2016/project/project.hpp, line 29: '', CursorKind.CXX_ACCESS_SPEC_DECL
+     |  +--File /home/manu343726/Documents/meetingcpp2016/project/project.hpp, line 30: 'Cat()', CursorKind.CONSTRUCTOR
+     |  |  +--File /home/manu343726/Documents/meetingcpp2016/project/project.hpp, line 31: 'class project::Animal', CursorKind.TYPE_REF
+     |  |  +--File /home/manu343726/Documents/meetingcpp2016/project/project.hpp, line 31: 'Animal', CursorKind.CALL_EXPR
+     |  |  |  +--File /home/manu343726/Documents/meetingcpp2016/project/project.hpp, line 31: 'Cat', CursorKind.DECL_REF_EXPR
+     |  |  |     +--File /home/manu343726/Documents/meetingcpp2016/project/project.hpp, line 31: 'class project::Animal', CursorKind.TYPE_REF
+     |  |  |     +--File /home/manu343726/Documents/meetingcpp2016/project/project.hpp, line 31: 'enum project::Animal::Species', CursorKind.TYPE_REF
+     |  |  +--File /home/manu343726/Documents/meetingcpp2016/project/project.hpp, line 32: '', CursorKind.COMPOUND_STMT
+     |  +--File /home/manu343726/Documents/meetingcpp2016/project/project.hpp, line 34: 'talk()', CursorKind.CXX_METHOD
+     |  |  +--File /home/manu343726/Documents/meetingcpp2016/project/project.hpp, line 34: '', CursorKind.CXX_OVERRIDE_ATTR
+     |  +--File /home/manu343726/Documents/meetingcpp2016/project/project.hpp, line 35: 'catAlias', CursorKind.FIELD_DECL
+     |     +--File /home/manu343726/Documents/meetingcpp2016/project/project.hpp, line 35: 'project', CursorKind.NAMESPACE_REF
+     |     +--File /home/manu343726/Documents/meetingcpp2016/project/project.hpp, line 35: 'string', CursorKind.TYPE_REF
+     +--File /home/manu343726/Documents/meetingcpp2016/project/project.hpp, line 38: 'Dog', CursorKind.CLASS_DECL
+        +--File /home/manu343726/Documents/meetingcpp2016/project/project.hpp, line 38: 'class project::Animal', CursorKind.CXX_BASE_SPECIFIER
+        |  +--File /home/manu343726/Documents/meetingcpp2016/project/project.hpp, line 38: 'class project::Animal', CursorKind.TYPE_REF
+        +--File /home/manu343726/Documents/meetingcpp2016/project/project.hpp, line 40: '', CursorKind.CXX_ACCESS_SPEC_DECL
+        +--File /home/manu343726/Documents/meetingcpp2016/project/project.hpp, line 41: 'Dog()', CursorKind.CONSTRUCTOR
+        |  +--File /home/manu343726/Documents/meetingcpp2016/project/project.hpp, line 42: 'class project::Animal', CursorKind.TYPE_REF
+        |  +--File /home/manu343726/Documents/meetingcpp2016/project/project.hpp, line 42: 'Animal', CursorKind.CALL_EXPR
+        |  |  +--File /home/manu343726/Documents/meetingcpp2016/project/project.hpp, line 42: 'Dog', CursorKind.DECL_REF_EXPR
+        |  |     +--File /home/manu343726/Documents/meetingcpp2016/project/project.hpp, line 42: 'class project::Animal', CursorKind.TYPE_REF
+        |  |     +--File /home/manu343726/Documents/meetingcpp2016/project/project.hpp, line 42: 'enum project::Animal::Species', CursorKind.TYPE_REF
+        |  +--File /home/manu343726/Documents/meetingcpp2016/project/project.hpp, line 43: '', CursorKind.COMPOUND_STMT
+        +--File /home/manu343726/Documents/meetingcpp2016/project/project.hpp, line 45: 'talk()', CursorKind.CXX_METHOD
+        |  +--File /home/manu343726/Documents/meetingcpp2016/project/project.hpp, line 45: '', CursorKind.CXX_OVERRIDE_ATTR
+        +--File /home/manu343726/Documents/meetingcpp2016/project/project.hpp, line 46: 'foo(const project::string &)', CursorKind.CXX_METHOD
+        |  +--File /home/manu343726/Documents/meetingcpp2016/project/project.hpp, line 46: '', CursorKind.PARM_DECL
+        |     +--File /home/manu343726/Documents/meetingcpp2016/project/project.hpp, line 46: 'project', CursorKind.NAMESPACE_REF
+        |     +--File /home/manu343726/Documents/meetingcpp2016/project/project.hpp, line 46: 'string', CursorKind.TYPE_REF
+        +--File /home/manu343726/Documents/meetingcpp2016/project/project.hpp, line 47: 'dogAlias', CursorKind.FIELD_DECL
+           +--File /home/manu343726/Documents/meetingcpp2016/project/project.hpp, line 47: 'project', CursorKind.NAMESPACE_REF
+           +--File /home/manu343726/Documents/meetingcpp2016/project/project.hpp, line 47: 'string', CursorKind.TYPE_REF
