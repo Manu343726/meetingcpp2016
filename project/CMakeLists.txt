@@ -2,6 +2,9 @@ project(MeetingCpp2016)
 cmake_minimum_required(VERSION 2.8)
 
 set(SIPLASPLAS_PACKAGE_URL "https://github.com/Manu343726/siplasplas/releases/download/0.0.2-1/siplasplas-master-GNU-6_2_1-Debug-dynamic.tar.gz")
+set(SIPLASPLAS_LIBCLANG_VERSION 3.8.1)
+set(SIPLASPLAS_DOWNLOAD_LIBCLANG ON)
+set(SIPLASPLAS_INSTALL_DRLPARSER_DEPENDENCIES ON) # Install parser script deps with pip
 include(siplasplas-bootstrap.cmake)
 
 add_library(project project.cpp)

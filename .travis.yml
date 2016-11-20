@@ -1,0 +1,67 @@
+# Based on siplasplas travis ci config
+# https://github.com/Manu343726/siplasplas/blob/master/.travis.yml
+
+language: cpp
+
+matrix:
+  include:
+
+  # Build docs
+    - env: CLANG_VERSION=3.7
+      os: linux
+      addons: &clang37
+        apt:
+          packages:
+            - clang-3.7
+            - g++-5
+            - gcc-5
+
+          sources:
+            - ubuntu-toolchain-r-test
+            - llvm-toolchain-precise-3.7
+
+    - env: CLANG_VERSION=3.7 GCC_VERSION=5.2.1
+      os: linux
+      addons: *clang37
+
+before_install:
+  - if [ -n "$GCC_VERSION" ]; then export CXX="g++-5" CC="gcc-5"; fi
+  - if [ -z "$GCC_VERSION" ]; then export CXX="clang++-${CLANG_VERSION}" CC="clang-${CLANG_VERSION}"; fi
+  - which $CXX
+  - which $CC
+  - $CXX --version
+  - $CC --version
+  - if [ -z "$GCC_VERSION" ]; then which clang++ || true; fi
+
+install:
+
+# From Louis Dionne's Boost.Hana .travis.yml
+
+############################################################################
+# All the dependencies are installed in ${TRAVIS_BUILD_DIR}/deps/
+############################################################################
+  - DEPS_DIR="${TRAVIS_BUILD_DIR}/deps"
+  - mkdir ${DEPS_DIR} && cd ${DEPS_DIR}
+
+############################################################################
+# Install a recent CMake
+############################################################################
+  - CMAKE_URL="http://www.cmake.org/files/v3.3/cmake-3.3.2-Linux-x86_64.tar.gz"
+  - mkdir cmake && travis_retry wget --no-check-certificate --quiet -O - ${CMAKE_URL} | tar --strip-components=1 -xz -C cmake
+  - export PATH=${DEPS_DIR}/cmake/bin:${PATH}
+
+  - cmake --version
+
+
+  # Finished building deps
+  - cd ${TRAVIS_BUILD_DIR}
+  - cd project
+
+  # Configure and build project:
+  - if [ ! -d build ]; then mkdir build; fi
+  - cd build
+
+script:
+  - cmake ..
+  - make
+  - ./main

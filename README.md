@@ -1,4 +1,4 @@
-Writing a reflection engine from scratch
+Writing a reflection engine from scratch [![Build Status](https://travis-ci.org/Manu343726/meetingcpp2016.svg?branch=master)](https://travis-ci.org/Manu343726/meetingcpp2016)
 ========================================
 
 Slides from my [Meeting C++ 2016](https://meetingcpp.com/index.php/mcpp2016.html) talk  
