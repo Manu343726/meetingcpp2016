@@ -15,7 +15,7 @@ Contents
 ### Talk examples
 
 This github project includes a small cmake project to show how siplasplas works, but during the talk
-I shown three examples from the siplasplas project itself:
+I played with three examples from the siplasplas project itself:
 
  - **JSON serialization**: Generic from/to JSON serialization using static reflection.
    See [examples/reflection/static/serialization.cpp](https://github.com/Manu343726/siplasplas/blob/master/examples/reflection/static/serialization.cpp)
