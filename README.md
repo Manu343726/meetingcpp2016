@@ -1,13 +1,12 @@
-Writing a reflection engine from scratch [![Build Status](https://travis-ci.org/Manu343726/meetingcpp2016.svg?branch=master)](https://travis-ci.org/Manu343726/meetingcpp2016)
-========================================
+Writing a reflection system for C++14 [![Build Status](https://travis-ci.org/Manu343726/meetingcpp2016.svg?branch=usingstdcpp2016)](https://travis-ci.org/Manu343726/meetingcpp2016)
+=====================================
 
-Slides from my [Meeting C++ 2016](https://meetingcpp.com/index.php/mcpp2016.html) talk  
+Slides from my [usingstdcpp 2016](https://usingstdcpp.org/using-stdcpp-2016/programa-2016/) talk.  
 See https://github.com/Manu343726/siplasplas
 
 Contents
 --------
 
- - `talk_submission.md`: The talk submission form
  - `slides.md`: Slides markdown sources
  - `slides.pdf`: Slides in PDF format, generated with [marp](https://yhatt.github.io/marp) (Thanks @foonathan)
  - `project/`: An example reflection project using [siplasplas 0.0.2](https://github.com/Manu343726/siplasplas/releases)
@@ -34,3 +33,4 @@ License
 -------
 
 Code snippets are licensed under the MIT license. Slides and other non-code text contents are licensed under creative commons
+The By logo is property of By Techdesign SL.

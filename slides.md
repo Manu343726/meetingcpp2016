@@ -1,8 +1,8 @@
 <!-- $theme: default -->
-<!-- footer: manuel@by.com.es - www.by.com.es - "Writing a reflection engine from scratch" - Meeting C++ 2016-->
+<!-- footer: manuel@by.com.es - www.by.com.es - "Writing a reflection system for C++14" - usingstdcpp 2016-->
 
-Writing a reflection engine from scratch
-========================================
+Writing a reflection system for C++14
+=====================================
 
 ###### Manu Sanchez @Manu343726
 
@@ -213,6 +213,13 @@ def visit(cursor):
 
 visit(tu) # Visit the translation unit AST
 ```
+
+---
+# DRLParser 
+### "*Diego Rodriguez Losada Parser*"
+###### ("*Dynamic Reflection Library Parser*")
+---
+#![](dracula.jpg)
 
 ---
 
@@ -973,13 +980,22 @@ Future work: Maintainance
      - Github says I have 5% of cmake scripts in the project...
      - [conan.io](https://www.conan.io/) save me. Diego you owe me a master class!
  - Devlog and more crazy stuff blogposts!
+
 ---
 
+#####![](conan.jpg)
+
+---
  - https://github.com/Manu343726/siplasplas
  - [Website](https://manu343726.github.io/siplasplas/)
  - [Latest doxygen docs](https://manu343726.github.io/siplasplas/doc/doxygen/master/modules.html)
 
 ---
 
-thanks_for_comming(); }
+thanks_for_coming(); }
 =
+
+---
+
+![](by-logo.jpg)
+---
