@@ -62,6 +62,6 @@ install:
   - cd build
 
 script:
-  - cmake ..
+  - cmake .. -DSIPLASPLAS_VERBOSE_DRLPARSER=ON -DCMAKE_VERBOSE_MAKEFILE=ON
   - make
   - ./main
